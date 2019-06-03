@@ -1,0 +1,112 @@
+﻿@{
+    ViewData["Title"] = "Resgatar";
+}
+
+    <div class="align-middle text-center">
+        <br /><br />
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4 text-center">
+                        Resgatar
+                    </h1>
+                    <h5 class="card-header text-right">
+                        Moedas: 100
+                    </h5>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="input-group">
+                            <select class="custom-select" id="inputGroupSelect04">
+                                <option selected>Escolha...</option>
+                                <option value="1">Camisa</option>
+                                <option value="2">Caneca</option>
+                                <option value="3">Adesivo</option>
+                            </select>
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button">Realizar Pedido</button>
+                            </div>
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div class="row">
+                        <h3 class="text-center">
+                            Pedidos
+                            <br /><br />
+                        </h3>
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Data/Hora
+                                    </th>
+                                    <th>
+                                        Item
+                                    </th>
+                                    <th>
+                                        Status
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="">
+                                    <td>
+                                        25/05/2019
+                                    </td>
+                                    <td>
+                                        Camisa Smile
+                                    </td>
+                                    <td>
+                                        Entregue
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        20/05/2019
+                                    </td>
+                                    <td>
+                                        Caneca Tribo
+                                    </td>
+                                    <td>
+                                        Entregue
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        22/05/2019
+                                    </td>
+                                    <td>
+                                        Camisa Dti
+                                    </td>
+                                    <td>
+                                        Aguardando Remessa
+                                    </td>
+                                </tr>
+                                <tr class="">
+                                    <td>
+                                        23/05/2019
+                                    </td>
+                                    <td>
+                                        Adesivo CodeReview
+                                    </td>
+                                    <td>
+                                        Entregue
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+        </div>
+
+        <br /><br /><br />
+
+    </div>
+
+<script>
+    $(document).ready( function () {
+        $('#table_id').dataTable();
+    } );
+</script>

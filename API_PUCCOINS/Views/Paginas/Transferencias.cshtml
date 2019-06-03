@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Tansferencias";
+}
+
+    <div class="align-middle text-center">
+        <br /><br />
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4 text-center">
+                        Doar Moedas
+                    </h1>
+                    <h5 class="card-header text-right">
+                        Moedas: 100
+                    </h5>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="procurarDestinatario" aria-describedby="procurarDestinatario" placeholder="Nome do Destinatario">
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-dark btn-block">Buscar</button>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="row">
+                        <div class="col-md-8 text-left">
+                            <h5>Nome.: </h5>Thiago Lopes <br /> <br />
+                            <h5>Tribo.: </h5> Balboa
+                        </div>
+                        <div class="col-md-4">
+                            <br /><br />
+                            <input type="number" class="form-control" id="procurarDestinatario" aria-describedby="procurarDestinatario" placeholder="Valor">
+                            <br />
+                            <button type="button" class="btn btn-success btn-block">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br />
+
+    </div>
+
+<script>
+    $(document).ready( function () {
+        $('#table_id').dataTable();
+    } );
+</script>

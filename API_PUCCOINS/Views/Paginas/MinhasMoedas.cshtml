@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Minhas Moedas";
+}
+
+    <div class="align-middle text-center">
+        <br /><br />
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="display-4 text-center">
+                        Minhas Moedas
+                    </h1>
+                    <h5 class="card-header text-right">
+                        Moedas: 100
+                    </h5>
+                    <br /><br />
+
+                    <div class="card">
+                        <div class="card-body">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            #
+                                        </th>
+                                        <th>
+                                            Descrição
+                                        </th>
+                                        <th>
+                                            Data/Hora
+                                        </th>
+                                        <th>
+                                            Origem
+                                        </th>
+                                        <th>
+                                            Tipo
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Pelo bom trabalho
+                                        </td>
+                                        <td>
+                                            26/05/2019
+                                        </td>
+                                        <td>
+                                            Felipe Chagas
+                                        </td>
+                                        <td>
+                                            Doação
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            Recompensa - Techshot
+                                        </td>
+                                        <td>
+                                            23/05/2019
+                                        </td>
+                                        <td>
+                                            DTI
+                                        </td>
+                                        <td>
+                                            Techshot
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            Realização de KT
+                                        </td>
+                                        <td>
+                                            20/05/2019
+                                        </td>
+                                        <td>
+                                            DTI
+                                        </td>
+                                        <td>
+                                            KT
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            4
+                                        </td>
+                                        <td>
+                                            Pelo apoio a equipe Javalis
+                                        </td>
+                                        <td>
+                                            18/05/2019
+                                        </td>
+                                        <td>
+                                            Javalis
+                                        </td>
+                                        <td>
+                                            Reconhecimento
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            5
+                                        </td>
+                                        <td>
+                                            Bom trabalho na sprint
+                                        </td>
+                                        <td>
+                                            15/05/2019
+                                        </td>
+                                        <td>
+                                            Felipe Chagas
+                                        </td>
+                                        <td>
+                                            Doação
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer text-right">
+                            <div class="btn-group btn-group-lg" role="group">
+                                <a class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="Transferencias">Doar Moedas</a>
+                                <a class="btn btn-secondary" asp-area="" asp-controller="Home" asp-action="Resgatar">Resgatar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br />
+
+    </div>
+
+<script>
+    $(document).ready( function () {
+        $('#table_id').dataTable();
+    } );
+</script>
