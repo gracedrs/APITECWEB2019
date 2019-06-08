@@ -14,13 +14,13 @@ using API_PUCCOINS.Models;
 
 namespace API_PUCCOINS.Controllers
 {
-    [BasicAuthentication]
+    
     public class ContasController : ApiController
     {
         private API_PUCCOINSContext db = new API_PUCCOINSContext();
 
         // GET: api/Contas
-        [AuthorizeUser(Roles = "Admin")]
+        
         public IQueryable<Conta> GetContas()
         {
             return db.Contas;
